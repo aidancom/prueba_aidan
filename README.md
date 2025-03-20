@@ -1,21 +1,8 @@
 # Agenda de contactos
-Breve programa para enviar contactos a una base de datos
-Notas importantes: debido al tiempo, no he podido hacer furncionalidades de editar y borrar, pero se haria llamando a eventos onclick (en main o en archivos js apartados para mantener funcionalidades separadas) los cuales hagan una cosulta a la base de datos y, si el nombre, email y telefono coinciden con los de la consulta, eliminarlos de la tabla y la lista. Para editar se reciclaria el evento de enviar para que hiciese un udpate en vez de un insert con la informacion nueva. pero previamente habria que:
+Breve programa para agregar contactos y poder editar y eliminarlos en una base de datos
 
-PARA ELIMINAR CONTACTOS: 
-    $nombre = $_POST["nombre"];
-    $telefono = $_POST["telefono"];
-    $email = $_POST["email"];
-
-    $sql = "DELETE FROM contactos WHERE nombre = '$nombre' AND telefono = '$telefono' AND email = '$email'";
-    
-PARA ACTUALIZAR CONTACTOS:
-    $nombre = $_POST["nombre"];
-    $telefono = $_POST["telefono"];
-    $email = $_POST["email"];
-
-    $sql = "UPDATE contactos SET nombre = '$nuevo_nombre', telefono = '$nuevo_telefono', email = '$nuevo_email' WHERE nombre = '$nombre' AND telefono = '$telefono'";
-
-Phpmyadmin me ha estado dando errores, por lo cual no he podido hacer las pruebas pertinentes (aunque tampoco era necesario, ya que para hacer la conexion y el insert no hay que hacer gran cosa)
-
-Mejoras: hacer las conexiones y las consultas seguras para evitar inyecciones mysql (sinceramente, tengo poca experiencia en esto, por lo cual no lo he podido poner en practica)
+# Pasos para instalar el programa
+- Hacer un git clone del proyecto
+- Importar la base de datos
+- Ejecutar xampp o wampp
+- Disfrutar :)
