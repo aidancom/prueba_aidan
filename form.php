@@ -18,16 +18,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <h1>Bienvenido a la Lista de Contactos, <?php echo $usuario_valido; ?></h1>
     <div id="form_box">
-        <label>Nombre</label>
-        <input type="text" name="contact_name">
-        <label>Telefono</label>
-        <input type="number" name="contact_phone">
-        <label>Correo electrónico</label>
-        <input type="mail" name="contact_email">
-        <button id="submit">Enviar</button>
+        <form method="post" id="form_contacts">
+            <label>Nombre</label>
+            <input type="text" name="contact_name" id="contact_name">
+            <label>Telefono</label>
+            <input type="number" name="contact_phone" id="contact_phone">
+            <label>Correo electrónico</label>
+            <input type="mail" name="contact_email" id="contact_email">
+            <button id="submit" type="submit">Enviar</button>
+        </form>
     </div>
     <div id="form_table">
-
+        <table id="table_contacts"></table>
     </div>
 </body>
 </html>

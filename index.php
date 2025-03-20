@@ -12,7 +12,7 @@
         <input type="text" name="user" id="user">
         <label>Contraseña</label>
         <input type="password" name="password" id="password">
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 <footer>
