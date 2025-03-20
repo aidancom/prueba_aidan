@@ -14,6 +14,6 @@ PARA ACTUALIZAR CONTACTOS:
     $telefono = $_POST["telefono"];
     $email = $_POST["email"];
 
-$sql = "UPDATE contactos SET nombre = '$nuevo_nombre', telefono = '$nuevo_telefono', email = '$nuevo_email' WHERE nombre = '$nombre' AND telefono = '$telefono'";
+    $sql = "UPDATE contactos SET nombre = '$nuevo_nombre', telefono = '$nuevo_telefono', email = '$nuevo_email' WHERE nombre = '$nombre' AND telefono = '$telefono'";
 
 Phpmyadmin me ha estado dando errores, por lo cual no he podido hacer las pruebas pertinentes (aunque tampoco era necesario, ya que para hacer la conexion y el insert no hay que hacer gran cosa)
