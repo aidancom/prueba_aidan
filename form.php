@@ -10,28 +10,45 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
     <script type="text/javascript" src="scripts/main.js"></script>
     <title>Lista de Contactos</title>
 </head>
+
 <body>
-    <h1>Bienvenido a la Lista de Contactos, <?php echo $usuario_valido; ?></h1>
-    <div id="form_box">
-        <form method="post" id="form_contacts">
-            <label>Nombre</label>
-            <input type="text" name="contact_name" id="contact_name">
-            <label>Telefono</label>
-            <input type="number" name="contact_phone" id="contact_phone">
-            <label>Correo electrónico</label>
-            <input type="mail" name="contact_email" id="contact_email">
-            <button id="submit" type="submit">Enviar</button>
-        </form>
-    </div>
-    <div id="form_table">
-        <table id="table_contacts"></table>
+    <h1>Bienvenido a la lista de contactos, <?php echo $usuario_valido; ?></h1>
+    <div class="info">
+        <div id="form_box">
+            <form method="post" id="form_contacts">
+                <fieldset>
+                    <div class="input_label">
+                        <label>Nombre</label>
+                        <input type="text" name="contact_name" id="contact_name">
+                    </div>
+                    <div class="input_label">
+                        <label>Telefono</label>
+                        <input type="number" name="contact_phone" id="contact_phone">
+                    </div>
+                    <div class="input_label">
+                        <label>Correo electrónico</label>
+                        <input type="mail" name="contact_email" id="contact_email">
+                    </div>
+                    <div class="button">
+                        <button id="submit" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="form_table">
+            <h2>Lista de contactos:</h2>
+            <table id="table_contacts"></table>
+        </div>
     </div>
 </body>
+
 </html>
 <?php 
     } else {

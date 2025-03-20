@@ -1,0 +1,56 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0) 0%, rgba(4,137,178,1) 0%, rgba(0,255,231,1) 100%);
+}
+
+fieldset {
+  background-color: #fff;
+  padding: 40px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#form_login, #form_contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_label {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+  .info {
+    display: block;
+}
+}
